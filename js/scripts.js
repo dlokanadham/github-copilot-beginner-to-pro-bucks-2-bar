@@ -86,7 +86,7 @@ function downloadCanvasAsImage(canvasId, fileName) {
 document.getElementById("username").addEventListener("input", function () {
     const username = this.value; // Get the value of the input field
     // regular expression to check if the username has at least 1 capital letter, 1 special character, 1 number, and is at least 8 characters long
-    const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+={}\[\]:;"'<>,.?~`-])(?=.*\d)[A-Za-z\d!@#$%^&*()_+={}\[\]:;"'<>,.?~`-]{8,}$/;
+    const regex = /^(?=.*[A-Z])(?=.*[!@#$%^&*()_+={}\[\]:;"'<>,.?~`~-])(?=.*\d)[A-Za-z\d!@#$%^&*()_+={}\[\]:;"'<>,.?~`~-]{8,}$/;
     if (!regex.test(username)) { // If the username does not match the regex, set the username input boarder color to red
         this.style.borderColor = "red"; // Set the border color to red
         return; // Exit the function
